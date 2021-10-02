@@ -1,0 +1,137 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "montserrat", sans-serif;
+}
+
+.app {
+  background-image: url("../assets/sunny.jpg");
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s ease-out;
+}
+.app-cold {
+  background-image: url("../assets/cold1.jpg");
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s ease-out;
+}
+.app-rain {
+  background-image: url("../assets/rainy.jpg");
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s ease-out;
+}
+.app-default {
+  background-image: url("../assets/dark_default.jpg");
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s ease-out;
+}
+
+main {
+  min-height: 100vh;
+
+  background-image: linear-gradient(
+    to bottom,
+    rgba (0, 0, 0, 0.2),
+    rgba (0, 0, 0, 0.75)
+  );
+  padding: 25px;
+}
+
+.search-bar {
+  float: right;
+  display: flex;
+}
+
+.form-outline {
+  position: relative;
+  outline: none;
+}
+.form-control {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 60px;
+}
+
+.form-control:focus {
+  outline: 1px solid black;
+}
+
+.form-outline .icon {
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0px;
+  padding: 7px 7px;
+}
+.cross-btn {
+  opacity: 0.5;
+}
+.cross-btn:hover {
+  opacity: 1;
+}
+.location-box {
+  margin-top: 80px;
+}
+.location-box .location {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+.location-box .date {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 350;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+.weather-box {
+  text-align: center;
+}
+.weather-box .temp {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+
+  padding: 15px 25px;
+
+  color: #fff;
+  font-size: 102px;
+  font-weight: 900;
+
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+.weather-box .weather {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+.Max-Min {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  margin-top: 20px;
+}
+.Error {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  margin-top: 275px;
+}
